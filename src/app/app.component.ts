@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-
+import { AnimationOptions } from 'ngx-lottie';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'angular-practise';
+  animationOptions: AnimationOptions = {
+    path: 'assets/notification-V4.json',
+  };
 }
